@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textview_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/textview_item_title_hint"/>
+
+    <TextView
+        android:id="@+id/textview_item_category"
+        android:layout_below="@+id/togglebutton_item_status"
+        android:layout_toStartOf="@+id/imagebutton_item_priority"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/textview_item_category_hint"/>
+
+    <TextView
+        android:id="@+id/textview_item_dueDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_item_title"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        android:text="@string/textview_item_dueDate"
+        />
+
+    <TextView
+        android:id="@+id/textview_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_item_title"
+        android:layout_toEndOf="@+id/textview_item_dueDateText"
+        android:layout_marginStart="2dp"
+        android:textSize="12sp"
+        android:hint="@string/textview_item_date_hint"
+        />
+
+    <TextView
+        android:id="@+id/textview_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_item_dueDateText"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:hint="@string/textview_item_description_hint"
+        />
+
+    <ImageButton
+        android:id="@+id/imagebutton_item_priority"
+        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:layout_alignParentEnd="true"
+        android:background="#9ACF56"
+        android:contentDescription="@string/imageview_item_taskImportance"
+        />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/imagebutton_item_priority"
+        android:textOn="@string/togglebutton_item_textOn"
+        android:textOff="@string/togglebutton_item_textOff"/>
+
+
+</RelativeLayout>
